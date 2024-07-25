@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LR-style.css">
+    <title>Registrarse</title>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="img/logo.final.png" alt="Logo Finanfem">
+        <div class="container-form">
+            <form class="register">
+                <h2>Crear Cuenta</h2>
+                <span>Ingrese su correo electrónico para registrarse</span>
+                <div class="container-input">
+                    <input type="email" id="registerEmail" placeholder="Correo electrónico" required>
+                    <input type="text" id="registerUsername" placeholder="Nombre de usuario" required>
+                    <input type="password" id="registerPassword" placeholder="Contraseña" required>
+                    <input type="password" id="registerConfirmPassword" placeholder="Confirmar contraseña" required>
+                </div>
+                <button type="submit">Registrarse</button>
+                <p class="message">¿Ya tienes cuenta? <a href="login.html" id="showLogin">Iniciar Sesión</a></p>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="login&register.js"></script>
+</body>
+</html>
