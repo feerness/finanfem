@@ -1,0 +1,21 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('7e76125b-1f19-4baa-a526-f8c8de14e534.jpeg'); /* Ruta a tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .content {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para mejor legibilidad del contenido */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .contact-form {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para el formulario */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  

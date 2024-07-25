@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page con Bootstrap</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome (para íconos) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <!-- Montserrat Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Estilos personalizados -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="content">
+          <h2 class="text-center mb-4">Contacto FinamFem</h2>
+          <ul class="list-group">
+            <li class="list-group-item">Email: contacto@ejemplo.com</li>
+            <li class="list-group-item">Teléfono: +123456789</li>
+          </ul>
+          <div class="text-center mt-4">
+            <a href="#" class="btn btn-primary mr-2"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="#" class="btn btn-danger"><i class="fab fa-instagram"></i> Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="contact-form">
+          <h3 class="text-center mb-4">Envíanos un mensaje</h3>
+          <form action="enviar.php" method="POST">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery y Bootstrap JS (al final del body para mejor rendimiento) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Font Awesome JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>
