@@ -22,7 +22,7 @@ body {
 
 .contenedor {
   display: flex;
-  animation: carrusel 20s linear infinite;
+  animation: carrusel 30s linear infinite;
 }
 
 .contenedor .indicador {
