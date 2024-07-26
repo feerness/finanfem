@@ -1,5 +1,6 @@
 // apiFunction.js
 import React, { useEffect, useState } from 'react';
+import './apiStyles.css';
 
 const apiKey = 'XK5W1L2RMWENAY0T'; // Tu clave de API
 
@@ -23,7 +24,6 @@ const ApiFunction = () => {
     const [cpiData, setCpiData] = useState(null);
     const [inflationData, setInflationData] = useState(null);
     const [ohlcvData, setOhlcvData] = useState(null);
-    const [marketNewsData, setMarketNewsData] = useState(null);
 
     useEffect(() => {
         const fetchAllData = async () => {
@@ -40,8 +40,6 @@ const ApiFunction = () => {
             const ohlcv = await fetchData(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${symbol}&apikey=${apiKey}`);
             setOhlcvData(ohlcv);
 
-            const news = await fetchData(`https://www.alphavantage.co/query?function=NEWS_SENTIMENT&apikey=${apiKey}`);
-            setMarketNewsData(news);
         };
 
         fetchAllData();
@@ -129,37 +127,32 @@ const ApiFunction = () => {
         return <p>No data available</p>;
     };
 
-    const renderMarketNews = () => {
-        if (marketNewsData) {
-            return <pre>{JSON.stringify(marketNewsData, null, 2)}</pre>; // Renderiza los datos de noticias como JSON para depuración
-        }
-        return <p>No data available</p>;
-    };
 
     return (
-        <div>
-            <div className="section">
-                <h2>Real GDP</h2>
-                {renderRealGdp()}
-            </div>
-            <div className="section">
-                <h2>Consumer Price Index (CPI)</h2>
-                {renderCpi()}
-            </div>
-            <div className="section">
-                <h2>Inflation</h2>
-                {renderInflation()}
-            </div>
-            <div className="section full-width">
-                <h2>OHLCV Data (Current Month)</h2>
-                {renderOhlcv()}
-            </div>
-            <div className="section">
-                <h2>Market News & Sentiment Data</h2>
-                {renderMarketNews()}
-            </div>
-        </div>
+        <div className="container">
+      <div className="section">
+        <h2>PIB</h2>
+        <p>El PIB Real mide el valor total de los bienes y servicios producidos en un país, ajustado por la inflación, lo que proporciona una imagen más precisa del crecimiento económico.</p>
+        {renderRealGdp()}
+      </div>
+      <div className="section">
+        <h2>IPC</h2>
+        <p>El IPC rastrea los cambios en los precios de una canasta de bienes y servicios de consumo, reflejando el costo de vida y la inflación para los consumidores.</p>
+        {renderCpi()}
+      </div>
+      <div className="section">
+        <h2>Inflación</h2>
+        <p>La inflación es la tasa a la cual aumentan los precios de los bienes y servicios, reduciendo el poder adquisitivo de la moneda. Es un indicador clave de la estabilidad económica.</p>
+        {renderInflation()}
+      </div>
+      <div className="section full-width">
+        <h2>Datos OHLCV del Mes Actual</h2>
+        <p>Los datos OHLCV incluyen la apertura, el máximo, el mínimo, el cierre y el volumen de un activo financiero, proporcionando una visión completa del comportamiento del mercado en un periodo específico.</p>
+        {renderOhlcv()}
+      </div>
+    </div>
     );
 };
 
 export default ApiFunction;
+

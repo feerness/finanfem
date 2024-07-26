@@ -7,7 +7,6 @@ const Herramientas = () => {
     <section className="content py-5">
       <div className="container">
         <h2>Indicadores Financieros</h2>
-        <h5>Economic Indicators</h5>
         {ApiFunction}
         <ApiFunction />
       </div>
