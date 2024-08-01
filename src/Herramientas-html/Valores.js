@@ -70,8 +70,8 @@ const Valores = () => {
   tenerValores(apiUrl);
 
   return (
-    <div class="carrusel">
-      <div class="contenedor"></div>
+    <div className="carrusel">
+      <div className="contenedor"></div>
     </div>
   );
 };
