@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-function Navbar() {
+function NavbarCliente() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="/images/logo.final.png">
@@ -19,9 +19,9 @@ function Navbar() {
           <li className="nav-item dropdown">
             <Link to="#" className="nav-link dropdown-toggle" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recursos</Link>
             <div className="dropdown-menu" aria-labelledby="recursosDropdown">
-              <Link className="dropdown-item" to="./articulosAdmin">Artículos</Link>
-              <Link className="dropdown-item" to="/">PDF's</Link>
-              <Link className="dropdown-item" to="/">Videos</Link>
+              <Link className="dropdown-item" to="./articulosCliente">Artículos</Link>
+              <Link className="dropdown-item" to="./pdfCliente">PDF's</Link>
+              <Link className="dropdown-item" to="./videosCliente">Videos</Link>
             </div>
           </li>
           <li className="nav-item dropdown">
@@ -34,16 +34,15 @@ function Navbar() {
           <li className="nav-item dropdown">
             <Link to="#" className="nav-link dropdown-toggle" id="comunidadDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Comunidad</Link>
             <div className="dropdown-menu" aria-labelledby="comunidadDropdown">
-              <Link className="dropdown-item" to="./foroAdmin">Foro</Link>
-              <Link className="dropdown-item" to="./perfilesAdmin">Perfiles</Link>
+              <Link className="dropdown-item" to="./foroCliente">Foro</Link>
+              <Link className="dropdown-item" to="./perfilesCliente">Actividad</Link>
             </div>
           </li>
           <li className="nav-item dropdown">
-            <Link to="#" className="nav-link dropdown-toggle" id="administracionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administración</Link>
+            <Link to="#" className="nav-link dropdown-toggle" id="administracionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Consultoría</Link>
             <div className="dropdown-menu" aria-labelledby="administracionDropdown">
-              <Link className="dropdown-item" to="./archivadosAdmin">Archivados</Link>
-              <Link className="dropdown-item" to="./reportesAdmin">Reportes</Link>
-              <Link className="dropdown-item" to="./rolesAdmin">Roles</Link>
+              <Link className="dropdown-item" to="./reportesCliente">Reportes</Link>
+              <Link className="dropdown-item" to="./actividadCliente">Reglas</Link>
             </div>
           </li>
           <li className="nav-item">
@@ -57,4 +56,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavbarCliente;
