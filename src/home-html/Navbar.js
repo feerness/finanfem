@@ -20,8 +20,8 @@ function Navbar() {
             <Link to="#" className="nav-link dropdown-toggle" id="recursosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recursos</Link>
             <div className="dropdown-menu" aria-labelledby="recursosDropdown">
               <Link className="dropdown-item" to="./articulosAdmin">Artículos</Link>
-              <Link className="dropdown-item" to="/">PDF's</Link>
-              <Link className="dropdown-item" to="/">Videos</Link>
+              <Link className="dropdown-item" to="./pdfAdmin">PDF's</Link>
+              <Link className="dropdown-item" to="./videosAdmin">Videos</Link>
             </div>
           </li>
           <li className="nav-item dropdown">
