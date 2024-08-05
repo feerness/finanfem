@@ -1,6 +1,5 @@
 // apiFunction.js
 import React, { useEffect, useState } from "react";
-import "./apiStyles.css";
 
 const apiKey = "XK5W1L2RMWENAY0T"; // Tu clave de API
 
