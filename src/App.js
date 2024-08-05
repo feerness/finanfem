@@ -2,6 +2,11 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './home-html/Navbar';
 import Herramientas from './Herramientas-html/herramientas'; // Asegúrate de que el nombre del archivo coincida con la importación
+import ArticulosAdmin from './recursos-admin/articulosAdmin';
+import PdfAdmin from './recursos-admin/pdfAdmin';
+import VideosAdmin from './recursos-admin/videosAdmin';
+
+
 
 function App() {
   return (
@@ -9,7 +14,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/herramientas" element={<Herramientas />} />
-        {/* Agrega otras rutas aquí si es necesario */}
+        <Route path="/articulosAdmin" element={<ArticulosAdmin />} />
+        <Route path="/pdfAdmin" element={<PdfAdmin />} />
+        <Route path="/videosAdmin" element={<VideosAdmin />} />
       </Routes>
     </Router>
   );
