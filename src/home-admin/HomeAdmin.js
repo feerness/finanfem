@@ -1,18 +1,18 @@
 import React from "react";
-import "./HomeAdmin";
+import "./HomeAdmin.css";
 import Image1 from "./1.png"; // Asegúrate de usar la ruta correcta
 
 function CardAdmin({ title, links }) {
   return (
-    <div className="card">
-      <div className="card-body">
-        <div className="image-container">
+    <div className="card1">
+      <div className="card-body1">
+        <div className="image-container1">
           <img className="uwu" src={Image1} alt="icono-sirena" />
         </div>
-        <h2 className="card-title">{title}</h2>
+        <h2 className="card-title1">{title}</h2>
         {links.map((link, index) => (
           <button
-            className="card-button"
+            className="card-button1"
             key={index}
             onClick={() => (window.location.href = link.href)}
           >
@@ -63,8 +63,8 @@ function HomeAdmin() {
   ];
 
   return (
-    <div className="app-container">
-      <div className="card-container">
+    <div className="app-container1">
+      <div className="card-container1">
         {cardsData.map((card, index) => (
           <CardAdmin key={index} title={card.title} links={card.links} />
         ))}
