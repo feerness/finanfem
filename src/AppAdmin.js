@@ -6,6 +6,7 @@ import ArticulosAdmin from "./recursos-admin/articulosAdmin";
 import PdfAdmin from "./recursos-admin/pdfAdmin";
 import VideosAdmin from "./recursos-admin/videosAdmin";
 import NewsComponent from "./noticias/noticiasCliente";
+import HomeAdmin from "./home-admin/HomeAdmin";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/videosAdmin" element={<VideosAdmin />} />
         <Route path="/noticiasCliente" element={<NewsComponent />} />
       </Routes>
+      <HomeAdmin />
     </Router>
   );
 }
