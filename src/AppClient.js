@@ -7,6 +7,7 @@ import PdfCliente from "./recursos-cliente/pdfCliente";
 import VideosCliente from "./recursos-cliente/videosCliente";
 import NotificacionCliente from "./Foro/notificacionCliente";
 import Terminos from "./terminos-normas/Terminos";
+import NewsComponent from "./noticias/noticiasCliente";
 
 function AppCliente() {
   return (
@@ -19,6 +20,7 @@ function AppCliente() {
         <Route path="/videosCliente" element={<VideosCliente />} />
         <Route path="/perfilesCliente" element={<NotificacionCliente />} />
         <Route path="/actividadCliente" element={<Terminos />} />
+        <Route path="/noticiasCliente" element={<NewsComponent />} />
       </Routes>
     </Router>
   );
