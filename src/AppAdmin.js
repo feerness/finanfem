@@ -7,7 +7,7 @@ import PdfAdmin from "./recursos-admin/pdfAdmin";
 import VideosAdmin from "./recursos-admin/videosAdmin";
 import NewsComponent from "./noticias/noticiasCliente";
 import HomeAdmin from "./home-admin/HomeAdmin";
-
+import ArchivadoAdmin from "./comunidad-admin/archivadosAdmin";
 function App() {
   return (
     <Router>
@@ -21,6 +21,7 @@ function App() {
         <Route path="/videosAdmin" element={<VideosAdmin />} />
         <Route path="/noticiasCliente" element={<NewsComponent />} />
         <Route path="/inicio" element={<HomeAdmin />} />{" "}
+        <Route path="/archivadosAdmin" element={<ArchivadoAdmin />} />
         {/* Ruta específica para HomeAdmin, opcional si necesitas acceder a ella directamente */}
       </Routes>
     </Router>

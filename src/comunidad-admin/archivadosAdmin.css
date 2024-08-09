@@ -1,0 +1,123 @@
+.app-body3 {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container3 {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title3 {
+  text-align: center;
+  color: #333;
+}
+
+.scroll-container3 {
+  max-height: 600px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.post3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.post-icon3 {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.post-title3 {
+  margin: 5px 0;
+  color: #555;
+}
+
+.post-date3,
+.post-comments3,
+.post-username3 {
+  margin: 5px 0;
+  color: #777;
+}
+
+.post-link3 {
+  color: #007bff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.post-link3:hover {
+  text-decoration: underline;
+}
+
+.usuario-baneado3 .user-status3 {
+  color: red;
+  font-weight: bold;
+}
+
+.usuario-advertido3 .user-status3 {
+  color: orange;
+  font-weight: bold;
+}
+
+.pagination3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.page-link3 {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  color: #007bff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.page-link3:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.page-link3.prev,
+.page-link3.next {
+  font-weight: bold;
+  padding: 5px 15px;
+}
+
+.page-link3.prev {
+  margin-right: 10px;
+}
+
+.page-link3.next {
+  margin-left: 10px;
+}
+
+.page-link3.disabled {
+  pointer-events: none;
+  color: #ccc;
+}
+
+.page-link3.active {
+  background-color: #007bff;
+  color: #fff;
+}
