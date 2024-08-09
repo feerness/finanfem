@@ -1,37 +1,42 @@
-/* styles.css */
 .body-container {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
   background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* Centra el contenido principal horizontalmente */
 }
 
 .orden-div {
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px; /* Define un ancho máximo para que el contenido se centre correctamente */
+  justify-content: flex-start; /* Alinea el contenido desde la izquierda */
 }
 
 .lateral {
   background-color: #fff;
   border-radius: 10px;
-  padding: 20px;
+  padding: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-width: 280px;
-  position: fixed;
-  top: 20px;
+  width: 280px;
+  margin-right: 20px; /* Margen a la derecha del lateral */
   max-height: 88vh;
+  overflow-y: auto;
+  flex-shrink: 0; /* Evita que el lateral se encoja */
 }
 
 .lateral a {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none; /* Quita la línea de los enlaces */
+  color: black; /* Asegura que el color del texto sea el deseado */
   display: block;
   margin-bottom: 10px;
-  transition: text-decoration 0.3s;
+  transition: text-decoration 0.3s; /* Añade una transición suave para cuando se agregue la línea */
 }
 
 .lateral a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Añade la línea cuando el cursor pasa por encima */
 }
 
 .container2 {
@@ -40,13 +45,13 @@
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 800px;
-  margin: auto;
-  margin-left: 340px; /* Add margin to the left to avoid overlap with the fixed sidebar */
+  flex-grow: 1; /* Permite que el contenedor crezca ocupando el espacio disponible */
 }
 
 .titulo1,
 .titulo2 {
   display: flex;
+  color: #333;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ddd;
@@ -90,12 +95,16 @@ ul {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
+  .orden-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .lateral {
-    position: static;
-    max-width: 100%;
-    margin: 0 auto 20px auto;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
     max-height: none;
-    overflow: visible;
   }
 
   .container2 {
