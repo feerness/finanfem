@@ -8,6 +8,7 @@ import VideosCliente from "./recursos-cliente/videosCliente";
 import NotificacionCliente from "./Foro/notificacionCliente";
 import Terminos from "./terminos-normas/Terminos";
 import NewsComponent from "./noticias/noticiasCliente";
+import ReportesCliente from "./consultoria-cliente/reportesCliente";
 
 function AppCliente() {
   return (
@@ -21,6 +22,7 @@ function AppCliente() {
         <Route path="/perfilesCliente" element={<NotificacionCliente />} />
         <Route path="/actividadCliente" element={<Terminos />} />
         <Route path="/noticiasCliente" element={<NewsComponent />} />
+        <Route path="/reportesCliente" element={<ReportesCliente />} />
       </Routes>
     </Router>
   );

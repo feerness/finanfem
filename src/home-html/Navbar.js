@@ -118,7 +118,7 @@ function Navbar() {
               <Link className="dropdown-item" to="./archivadosAdmin">
                 Archivados
               </Link>
-              <Link className="dropdown-item" to="./reportesAdmin">
+              <Link className="dropdown-item" to="./reportesCliente">
                 Reportes
               </Link>
               <Link className="dropdown-item" to="./rolesAdmin">
