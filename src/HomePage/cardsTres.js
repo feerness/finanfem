@@ -11,10 +11,10 @@ const CardsCarrusel = () => {
   ];
 
   return (
-    <Container className="my-4">
-      <Row className="justify-content-center">
+    <Container fluid className="custom-container">
+      <Row className="justify-content-space-between">
         {cards.map((card, index) => (
-          <Col key={index} md={4} sm={6} xs={12} className="mb-4">
+          <Col key={index} md={4} sm={6} xs={12} className="mb-4 custom-col">
             <Card className="h-100">
               <Card.Img
                 variant="top"

@@ -16,6 +16,7 @@ const HomePage = () => {
       <BarraContadores />
       <PreguntasFrecu />
       
+      
     </div>
   );
 };

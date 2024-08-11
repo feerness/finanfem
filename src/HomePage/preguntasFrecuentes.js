@@ -3,7 +3,7 @@ import "./preguntasFrecuentes.css";
 
 const PreguntasFrecu = () => {
   return (
-    <div className="container">
+    <div className="container-preg">
       <div className="titulo">
         <p>Preguntas Frecuentes</p>
       </div>

@@ -1,10 +1,10 @@
 import React from "react";
-import "./cardsTres.css";
+import "./barraContadores.css";
 
 const BarraContadores = () => {
   return (
     <div className="container">
-          <div className="tituto">
+          <div className="titulo">
               <p>Cada día somos más en nuestra plataforma</p>
           </div>
           <div className="contador-miembros">

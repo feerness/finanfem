@@ -4,8 +4,7 @@
     --secondary-color: #ffffff;
     --accent-color: #8d54a3;
     --background-color: #f2f2f2;
-    --border-color: #c4acd5;
-  }
+    }
   
   .containerf {
     display: flex;
@@ -13,8 +12,6 @@
     background-color: var(--secondary-color);
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border: 3px solid var(--border-color);
     margin: 2rem;
   }
   
@@ -51,7 +48,7 @@
   
   .titulo p {
     font-size: 2rem;
-    color: #000000;
+    color: #3c3c3b;
     font-weight: bold;
     margin-bottom: 1rem;
   }
