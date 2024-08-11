@@ -1,25 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./home-html/Navbar";
-import Herramientas from "./Herramientas-html/herramientas"; // Asegúrate de que el nombre del archivo coincida con la importación
-import ArticulosAdmin from "./recursos-admin/articulosAdmin";
-import PdfAdmin from "./recursos-admin/pdfAdmin";
-import VideosAdmin from "./recursos-admin/videosAdmin";
-import NewsComponent from "./noticias/noticiasCliente";
+import Navbar from "./Navbar/Navbar";
+import LandingPage from "./LandingPage";
+
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/herramientas" element={<Herramientas />} />
-        <Route path="/articulosAdmin" element={<ArticulosAdmin />} />
-        <Route path="/pdfAdmin" element={<PdfAdmin />} />
-        <Route path="/videosAdmin" element={<VideosAdmin />} />
-        <Route path="/noticiasCliente" element={<NewsComponent />} />
+        <Route path="/" element={<LandingPage />} />
       </Routes>
     </Router>
   );
 }
+
 
 export default App;

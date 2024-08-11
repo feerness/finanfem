@@ -1,0 +1,30 @@
+.custom-card-img {
+  height: 250px; /* Ajusta la altura de las imágenes para que sean consistentes */
+  object-fit: cover; /* Mantiene las imágenes bien encuadradas */
+  border-radius: 8px 8px 0 0; /* Opcional: para agregar un efecto redondeado */
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+.custom-button {
+  background-color: #3c3c3b; 
+  color: white;
+  border: none;
+  border-radius: 0 0 8px 8px; 
+  padding: 10px 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.custom-button:hover {
+  background-color: #4a1f70; 
+  color: #ecdcfd; 
+}
