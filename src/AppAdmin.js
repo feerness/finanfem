@@ -9,6 +9,8 @@ import NewsComponent from "./noticias/noticiasCliente";
 import HomeAdmin from "./home-admin/HomeAdmin";
 import ArchivadoAdmin from "./comunidad-admin/archivadosAdmin";
 import ReportesCliente from "./consultoria-cliente/reportesCliente";
+
+
 function App() {
   return (
     <Router>

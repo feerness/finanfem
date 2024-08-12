@@ -14,7 +14,7 @@ function AppCliente() {
   return (
     <Router>
       <Navbar />
-      <Routes>
+      <Routes>  
         <Route path="/herramientas" element={<Herramientas />} />
         <Route path="/articulosCliente" element={<ArticulosCliente />} />
         <Route path="/pdfCliente" element={<PdfCliente />} />
