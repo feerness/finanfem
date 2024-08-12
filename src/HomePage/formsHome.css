@@ -19,11 +19,80 @@
   
   /* Estilo para el formulario de registro */
   .register-form {
-    flex: 2; /* Permite que el formulario ocupe una parte flexible del contenedor */
+    font-family: Arial, sans-serif;
+    background-color: #e8e5ed;
+    margin: 0;
+    padding: 0;
+}
+
+.caja {
+    display: flex;
+    width: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.saludo {
+    background-color: #c8c3cf;
+    color: #000;
+    padding: 40px;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Espacio entre los campos del formulario */
-  }
+    justify-content: center;
+}
+
+.saludo p {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.form-container {
+    background-color: #b496cc;
+    padding: 40px;
+    width: 50%;
+    position: relative;
+    border-radius: 20px;
+}
+
+.form-container h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+}
+
+.register-form button {
+    width: 130px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #b04a8f;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+
+.register-form button:hover {
+    background-color: #a04888;
+}
   
   /* Estilo para los campos del formulario */
   .register-form input {

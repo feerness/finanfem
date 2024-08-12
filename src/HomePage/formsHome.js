@@ -5,7 +5,10 @@ import "./formsHome.css";
 const Saludo = () => {
   return (
     <div className="saludo">
-      <p>¡Bienvenido al registro!</p>
+      <p>¡Bienvenido al registro!
+      </p>
+        <h2> Nos alegra recibirte en nuestra plataforma y te invitamos a registrarte para que puedas acceder a todos los beneficios</h2>
+      
     </div>
   );
 };
