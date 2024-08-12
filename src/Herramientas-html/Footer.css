@@ -3,7 +3,6 @@
 .footer {
   background-color: #4e3670;
   color: #ffffff;
-  font-family: "Poppins", sans-serif;
   display: flex;
   box-sizing: border-box;
   margin: 0;
@@ -14,7 +13,10 @@
 
 .footer .container {
   display: flex;
+  margin-bottom: 2px;
   width: 100%;
+  align-items: center;
+  align-content: center;
   flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
 
 
@@ -25,10 +27,8 @@
   color: #ffffff;
   font-weight: 600;
   font-style: normal;
-  margin-right: 10px;
-  align-items: center;
-  align-content: center;
   font-size: 27px;
+  margin-bottom: 20px;
 }
 
 
@@ -37,7 +37,7 @@
   font-weight: 600;
   font-style: normal;
   font-size: 18px;
-  margin-right: 10px;
+
 }
 
 
