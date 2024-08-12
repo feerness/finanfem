@@ -72,9 +72,11 @@
 /* Ajustes para pantallas muy pequeñas (por ejemplo, teléfonos móviles pequeños) */
 @media (max-width: 575px) {
     .overlay-text {
-        max-width: 100%; /* Aumenta el ancho máximo del contenedor de texto */
+        max-width: 100%; 
     }
     .overlay-text p {
         font-size: 1.2rem; 
     }
 }
+
+

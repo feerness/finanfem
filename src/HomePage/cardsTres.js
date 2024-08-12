@@ -1,38 +1,38 @@
-import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './cardsTres.css'; // Importa tu archivo CSS personalizado
+import React from 'react';
+import { Card, Container, Row, Col, Button } from 'react-bootstrap';
+import './cardsTres.css';
 
-const CardsCarrusel = () => {
-  const cards = [
-    { src: "/images/recursos.woman.b.n.jpg", title: "Recursos" },
-    { src: "/images/comunidad3.jpg", title: "Comunidad" },
-    { src: "/images/herramientas.jpg", title: "Herramientas" },
-  ];
-
+const CustomCards = () => {
   return (
-    <Container fluid className="custom-container">
-      <Row className="justify-content-space-between">
-        {cards.map((card, index) => (
-          <Col key={index} md={4} sm={6} xs={12} className="mb-4 custom-col">
-            <Card className="h-100">
-              <Card.Img
-                variant="top"
-                src={card.src}
-                className="custom-card-img"
-              />
-              <Card.Body className="d-flex flex-column">
-                <Button className="custom-button mt-auto" block>
-                  {card.title}
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
+    <Container fluid className="bg-light-gray">
+      <Row className="justify-content-center">
+        <Col xs={12} sm={6} md={4} lg={3} className="mb-4">
+          <Card className="h-100">
+            <Card.Img variant="top" src="/images/wm.noticias.bn.jpg" className="custom-img" />
+            <Card.Body className="text-center">
+              <Button variant="primary" className="custom-btn">Recursos</Button>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col xs={12} sm={6} md={4} lg={3} className="mb-4">
+          <Card className="h-100">
+            <Card.Img variant="top" src="/images/friends.bn.jpg" className="custom-img" />
+            <Card.Body className="text-center">
+              <Button variant="primary" className="custom-btn">Comunidad</Button>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col xs={12} sm={6} md={4} lg={3} className="mb-4">
+          <Card className="h-100">
+            <Card.Img variant="top" src="/images/recursos.woman.b.n.jpg" className="custom-img" />
+            <Card.Body className="text-center">
+              <Button variant="primary" className="custom-btn">Herramientas</Button>
+            </Card.Body>
+          </Card>
+        </Col>
       </Row>
     </Container>
   );
 };
 
-export default CardsCarrusel;
-
+export default CustomCards;
