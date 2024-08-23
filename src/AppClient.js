@@ -9,12 +9,14 @@ import NotificacionCliente from "./Foro/notificacionCliente";
 import Terminos from "./terminos-normas/Terminos";
 import NewsComponent from "./noticias/noticiasCliente";
 import ReportesCliente from "./consultoria-cliente/reportesCliente";
+import HomePageCliente from "./LandingPageC";
 
 function AppCliente() {
   return (
     <Router>
       <Navbar />
-      <Routes>  
+      <Routes>
+        <Route path="/" element={<LandingPageC />} /> 
         <Route path="/herramientas" element={<Herramientas />} />
         <Route path="/articulosCliente" element={<ArticulosCliente />} />
         <Route path="/pdfCliente" element={<PdfCliente />} />

@@ -6,7 +6,7 @@ const BarraContadores = () => {
     <div className="containerB">
       <div className="tituloDatos">
         <div className="tituloB">
-          <p>Cada día somos más en nuestra plataforma</p>
+          <p>¡Cada día somos más en nuestra plataforma!</p>
         </div>
       </div>
       <div className="Datos">

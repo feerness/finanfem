@@ -13,21 +13,21 @@ const InfoNosotras = () => {
       </div>
       <div className="containerQS">
         <div className="titulo">
-          <p>¿Quiénes Somos?</p>
+          <h2>¿Quiénes Somos?</h2>
         </div>
         <div className="texto-informativo">
           <p>
-            Entendemos que el dinero mueve el mundo, pero también puede generar
-            una montaña rusa de emociones: desde la emoción y el estrés hasta la
-            ansiedad, la frustración, la comodidad y, a veces, un toque de
-            confusión. No hay duda, es un tema complejo.
+            Somos un grupo de mujeres dedicadas a apoyar a otras mujeres en la
+            gestión e inversión de su dinero. Sabemos que el acceso a
+            conocimientos y herramientas financieras ha sido limitado y que, a
+            menudo, no se han presentado de manera comprensible ni adaptada a
+            diferentes estilos de aprendizaje. Esto ha llevado a la percepción
+            de que aprender sobre finanzas es difícil.
           </p>
           <p>
-            En Finanfem, nos dedicamos a simplificar esta complejidad para que
-            puedas disfrutar de los frutos de tu trabajo sin complicaciones. Te
-            ayudamos a alcanzar la libertad de deudas, la independencia
-            financiera, una cartera de inversiones sólida y la prosperidad, sin
-            importar tu origen o situación actual.
+            En Finanfem, queremos romper esa limitación y dirigirnos a un
+            público femenino, ya que, en su mayoría, las mujeres son las jefas
+            de hogar y quienes administran los recursos.
           </p>
         </div>
         <div className="boton">
